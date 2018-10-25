@@ -20,7 +20,7 @@ All endpoints can return errors; the error payload is as follows:
 {
   "success": false,
   "errorCode": 429,
-  "error": "Text of exception"
+  "error": "Text of error"
 }
 ```
 

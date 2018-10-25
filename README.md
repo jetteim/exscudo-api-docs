@@ -7,6 +7,7 @@ Document | Description
 --- | ---
 [rest-api-doc.md](./rest-api-doc.md) | Description and usage of REST endpoints
 [ws-api-doc.md ](./ws-api-doc.md)    | Description and usage of WebSocket streams
+[errors.md](./errors.md) | Possible error codes
 
 ### GENERAL
 
@@ -64,7 +65,7 @@ Please see curl on-line documentation for additional info on request syntax.
 
 ### LIMITS
 
-* If an IP address exceeds the allowed amount of requests per minute (default 60) to a specific REST API endpoint - a HTTP 429 code will be returned with
+* If an IP address exceeds the allowed amount of requests per minute (default 60) to a specific REST API endpoint - a HTTP 1003 code will be returned with
 error response.
 * Upon receiving this response requests should be ceased.
 * Repeated API spamming will result in IP address ban.
