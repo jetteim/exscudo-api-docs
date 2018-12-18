@@ -31,6 +31,7 @@ All endpoints can return errors; the error payload is as follows:
 ##### `! In the requests specs below only the method part of your URI is stated. Please see the "General" section for the base endpoint.`
 
 ### Support methods
+These methods require authentication as described in Readme.
 
 #### Init
 
@@ -54,6 +55,7 @@ If successful returns:
 ```
 
 ### Market data
+These methods can be accessed both with or without authentication.
 
 #### Markets
 
@@ -348,6 +350,7 @@ Returns candlestick bars for a requested symbol in a requested market:
 **state** - OPEN, CLOSED, TIMEDOUT
 
 ### User data
+These methods require authentication as described in Readme.
 
 #### Accounts
 

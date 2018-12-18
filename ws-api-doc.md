@@ -1,4 +1,5 @@
 ## WebSocket API
+These methods require authentication as described in Readme.
 
 To open a websocket connection subscribe to the following endpont URI.
 

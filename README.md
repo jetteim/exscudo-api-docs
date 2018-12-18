@@ -19,7 +19,10 @@ Document | Description
 
 ### SECURITY
 
-* All API methods require authentication.
+All API methods except REST Market data endpoints require authentication as described below.
+Market data endpoints can be accessed with or without authentication. However request rate for unauthenticated calls is lower than for authenticated calls.
+See more info in limits section of this manual.
+
 * API key and Secret key can be generated in the settings section of user account
 * API key and Secret key are case-sensitive.
 * Signature should have UTF-8 encoding
@@ -65,8 +68,8 @@ Please see curl on-line documentation for additional info on request syntax.
 
 ### LIMITS
 
-* If an IP address exceeds the allowed amount of requests per minute (default 60) to a specific REST API endpoint - a HTTP 1003 code will be returned with
-error response.
+* If an IP address exceeds the allowed amount of requests per minute (default 60 for accessing endpoints with authentication and 5 if accessing market endpoints without authentication)
+to a specific REST API endpoint - a HTTP 1003 code will be returned with error response.
 * Upon receiving this response requests should be ceased.
 * Repeated API spamming will result in IP address ban.
 
