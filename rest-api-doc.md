@@ -631,7 +631,7 @@ Returns the following payload:
 
 #### Closed orders
 
-`GET https://test.exscudo.com/api/v1/orders/closed`
+`GET /orders/closed`
 
 To get all closed orders for the requested account.
 
